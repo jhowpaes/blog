@@ -1,7 +1,6 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-
-// import { Container } from './styles';
+import SignIn from '../../Pages/SignIn';
 
 const Stack = createStackNavigator();
 
@@ -9,7 +8,7 @@ const PageScreen = () => {
   return (
     <>
       <Stack.Navigator headerMode="none">
-        <Stack.Screen name="SignIn" component={SignInScreen} />
+        <Stack.Screen name="SignIn" component={SignIn} />
       </Stack.Navigator>
     </>
   );
