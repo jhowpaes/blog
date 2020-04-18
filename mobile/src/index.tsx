@@ -1,10 +1,11 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
+import Routes from './Core/Routes';
 import {AppStyle as styles} from './styles';
 
 const App = () => (
   <View style={styles.bg}>
-    <Text>App</Text>
+    <Routes />
   </View>
 );
 
