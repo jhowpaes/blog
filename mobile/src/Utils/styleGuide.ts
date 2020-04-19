@@ -17,8 +17,8 @@ interface FontGuides {
 export const FontGuide: FontGuides = {
   title: {
     fontFamily: 'Roboto',
-    fontSize: 14,
-    fontWeight: '500',
+    fontSize: 18,
+    fontWeight: 'bold',
     color: '#000000',
   },
   span: {
@@ -89,4 +89,6 @@ export const ColorGuide = {
   error: '#ED1651',
   success: '#1ECA6B',
   primary: '#0567c9',
+  white: '#FFFFFF',
+  black: '#000000',
 };
