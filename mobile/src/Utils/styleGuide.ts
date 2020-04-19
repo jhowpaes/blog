@@ -9,6 +9,9 @@ interface FontGuides {
   h4: TextStyle;
   h5: TextStyle;
   p: TextStyle;
+  textInput: TextStyle;
+  btnText: TextStyle;
+  linkText: TextStyle;
 }
 
 export const FontGuide: FontGuides = {
@@ -59,6 +62,26 @@ export const FontGuide: FontGuides = {
     fontSize: 14,
     fontWeight: 'bold',
     color: '#000000',
+  },
+  textInput: {
+    fontFamily: 'Roboto',
+    fontSize: 17,
+    fontWeight: '400',
+    color: '#000000',
+    padding: 10,
+  },
+  btnText: {
+    fontFamily: 'Roboto',
+    fontSize: 17,
+    fontWeight: '400',
+    color: '#FFFFFF',
+    padding: 10,
+  },
+  linkText: {
+    fontFamily: 'Roboto',
+    fontSize: 17,
+    fontWeight: '400',
+    color: '#FFFFFF',
   },
 };
 
