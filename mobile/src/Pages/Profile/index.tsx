@@ -41,8 +41,8 @@ const Profile = () => (
           onChange={() => {}}
         />
 
-        <Button title="Registrar" onPress={() => {}} />
-        <Button title="Sair" onPress={() => {}} />
+        <Button title="Atualizar" onPress={() => {}} />
+        <Button title="Sair" onPress={() => {}} type="logout" />
       </View>
     </View>
   </SafeAreaView>
