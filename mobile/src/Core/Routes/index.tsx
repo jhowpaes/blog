@@ -1,15 +1,18 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React, {useState} from 'react';
-import PageScreen from './PageScreen';
-import TabScreen from './TabScreen';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import PageStack from './PageStack';
+import AuthStack from './stacks/AuthStack';
 
 const Routes = () => {
   const [isLoggedIn, setIsLoggedIn] = useState();
 
   return (
-    <NavigationContainer>
-      {isLoggedIn ? <TabScreen /> : <PageScreen />}
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        {isLoggedIn ? <PageStack /> : <AuthStack />}
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 };
 
