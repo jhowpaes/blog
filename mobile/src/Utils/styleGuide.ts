@@ -1,6 +1,6 @@
 import {TextStyle} from 'react-native';
 
-interface styleGuides {
+interface FontGuides {
   title: TextStyle;
   span: TextStyle;
   h1: TextStyle;
@@ -11,7 +11,7 @@ interface styleGuides {
   p: TextStyle;
 }
 
-export const styleGuide: styleGuides = {
+export const FontGuide: FontGuides = {
   title: {
     fontFamily: 'Roboto',
     fontSize: 14,
@@ -62,7 +62,7 @@ export const styleGuide: styleGuides = {
   },
 };
 
-export const colors = {
+export const ColorGuide = {
   error: '#ED1651',
   success: '#1ECA6B',
   primary: '#0567c9',
