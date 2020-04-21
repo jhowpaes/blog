@@ -1,10 +1,20 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import CardIdeas from '../../components/CardIdeas';
+import {Container, Content} from './styles';
 
-const Home = () => (
-  <View>
-    <Text>Home</Text>
-  </View>
-);
+const Home = () => {
+  return (
+    <Container>
+      <Content>
+        <CardIdeas />
+        <CardIdeas />
+        <CardIdeas />
+        <CardIdeas />
+        <CardIdeas />
+        <CardIdeas />
+      </Content>
+    </Container>
+  );
+};
 
 export default Home;
