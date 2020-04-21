@@ -1,22 +1,34 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {Button, Text} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-
-// import { Container } from './styles';
+import {SafeAreaView} from 'react-native';
+import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import CardIdeas from '../../components/CardIdeas';
+import CustomHeader from '../../components/CustomHeader';
+import {ColorGuide} from '../../Utils/styleGuide';
+import {IdeasStyle as styles} from './styles';
 
 const Ideas = () => {
   const navigation = useNavigation();
 
   return (
-    <SafeAreaView>
-      <Text>Minhas ideias</Text>
-      <Button
-        title="Cadastrar"
-        onPress={() => {
-          navigation.navigate('IdeaStack');
-        }}
-      />
+    <SafeAreaView style={styles.container}>
+      <CustomHeader title="Minhas Ideias" />
+      <ScrollView style={styles.content}>
+        <TouchableOpacity
+          style={styles.containerBtn}
+          onPress={() => {
+            navigation.navigate('IdeaStack');
+          }}>
+          <Icon name="add-circle" size={30} color={ColorGuide.primary} />
+        </TouchableOpacity>
+
+        <CardIdeas />
+        <CardIdeas />
+        <CardIdeas />
+        <CardIdeas />
+        <CardIdeas />
+      </ScrollView>
     </SafeAreaView>
   );
 };
