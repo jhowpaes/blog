@@ -6,10 +6,10 @@ import CustomHeader from '../../components/CustomHeader';
 import IText from '../../components/Input';
 import {ProfileStyle as styles} from './styles';
 
-const Profile = () => (
-  <SafeAreaView style={styles.bg}>
-    <CustomHeader title="Meus dados" />
-    <View style={styles.content}>
+const Profile = () => {
+  return (
+    <SafeAreaView style={styles.bg}>
+      <CustomHeader title="Meus dados" />
       <View style={styles.form}>
         <IText
           placeholder="Digite seu nome"
@@ -44,8 +44,8 @@ const Profile = () => (
         <Button title="Atualizar" onPress={() => {}} />
         <Button title="Sair" onPress={() => {}} type="logout" />
       </View>
-    </View>
-  </SafeAreaView>
-);
+    </SafeAreaView>
+  );
+};
 
 export default Profile;

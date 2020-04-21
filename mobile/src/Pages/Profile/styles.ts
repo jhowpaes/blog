@@ -3,7 +3,6 @@ import {ColorGuide} from '../../Utils/styleGuide';
 
 interface ProfileStyles {
   bg: ViewStyle;
-  content: ViewStyle;
   form: ViewStyle;
   separator: ViewStyle;
 }
@@ -11,17 +10,13 @@ interface ProfileStyles {
 export const ProfileStyle: ProfileStyles = {
   bg: {
     flex: 1,
-    backgroundColor: ColorGuide.white,
-  },
-  content: {
-    flex: 1,
-    padding: 10,
+    backgroundColor: ColorGuide.secondary,
   },
   form: {
-    flex: 1,
+    height: '100%',
     backgroundColor: ColorGuide.primary,
-    padding: 10,
-    borderRadius: 7,
+    paddingTop: 20,
+    paddingHorizontal: 20,
   },
   separator: {
     backgroundColor: ColorGuide.white,
