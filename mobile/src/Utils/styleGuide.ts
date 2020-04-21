@@ -11,6 +11,7 @@ interface FontGuides {
   p: TextStyle;
   textInput: TextStyle;
   btnText: TextStyle;
+  btnTextLogout: TextStyle;
   linkText: TextStyle;
 }
 
@@ -25,69 +26,64 @@ interface ColorGuides {
 
 export const FontGuide: FontGuides = {
   title: {
-    fontFamily: 'Roboto',
     fontSize: 18,
     fontWeight: 'bold',
     color: '#333333',
   },
   span: {
-    fontFamily: 'Roboto',
     fontSize: 13,
     fontWeight: '400',
-    color: '#333333',
+    color: '#b8b6b6',
   },
   h1: {
-    fontFamily: 'Roboto',
     fontSize: 18,
     fontWeight: '400',
     color: '#333333',
   },
   h2: {
-    fontFamily: 'Roboto',
     fontSize: 16,
     fontWeight: '400',
     color: '#333333',
   },
   h3: {
-    fontFamily: 'Roboto',
     fontSize: 14,
     fontWeight: '400',
     color: '#333333',
   },
   h4: {
-    fontFamily: 'Roboto',
     fontSize: 13,
     fontWeight: '400',
     color: '#333333',
   },
   h5: {
-    fontFamily: 'Roboto',
     fontSize: 12,
     fontWeight: '400',
     color: '#333333',
   },
   p: {
-    fontFamily: 'Roboto',
     fontSize: 12,
     fontWeight: '300',
     color: '#333333',
   },
   textInput: {
-    fontFamily: 'Roboto',
     fontSize: 17,
     fontWeight: '400',
     color: '#333333',
     padding: 10,
   },
   btnText: {
-    fontFamily: 'Roboto',
     fontSize: 17,
     fontWeight: '400',
     color: '#FFFFFF',
     padding: 10,
   },
+  btnTextLogout: {
+    fontSize: 17,
+    fontWeight: '400',
+    color: '#333333',
+    padding: 10,
+  },
   linkText: {
-    fontFamily: 'Roboto',
     fontSize: 17,
     fontWeight: '400',
     color: '#FFFFFF',
