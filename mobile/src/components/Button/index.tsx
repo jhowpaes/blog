@@ -12,7 +12,7 @@ interface Props {
 const Button = ({title, onPress, type = 'default'}: Props) => {
   return type === 'logout' ? (
     <TouchableOpacity style={styles.btnLogout} onPress={onPress}>
-      <Text style={FontGuide.btnText}>{title}</Text>
+      <Text style={FontGuide.btnTextLogout}>{title}</Text>
     </TouchableOpacity>
   ) : (
     <TouchableOpacity style={styles.btnDefault} onPress={onPress}>
