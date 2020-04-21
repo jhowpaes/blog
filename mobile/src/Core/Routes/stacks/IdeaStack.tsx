@@ -7,7 +7,7 @@ const IdeaStack: React.FC = () => {
   const pagesIdeaStack = [{name: 'Nova Ideia', component: CreateIdea}];
 
   return (
-    <Stack.Navigator>
+    <Stack.Navigator headerMode="none">
       {pagesIdeaStack.map((page) => (
         <Stack.Screen
           key={page.name}
