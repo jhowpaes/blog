@@ -6,6 +6,8 @@ interface CustomHeaderStyles {
 
 export const CustomHeaderStyle: CustomHeaderStyles = {
   holder: {
+    height: 30,
+    justifyContent: 'center',
     alignItems: 'center',
   },
 };
