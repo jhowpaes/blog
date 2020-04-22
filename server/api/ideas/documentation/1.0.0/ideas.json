@@ -516,7 +516,8 @@
     "schemas": {
       "Ideas": {
         "required": [
-          "id"
+          "id",
+          "date"
         ],
         "properties": {
           "id": {
@@ -564,15 +565,21 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "name": {
+                "type": "string"
               }
             }
           },
           "date": {
-            "type": "string"
+            "type": "datetime"
           }
         }
       },
       "NewIdeas": {
+        "required": [
+          "date"
+        ],
         "properties": {
           "description": {
             "type": "string"
@@ -581,7 +588,7 @@
             "type": "string"
           },
           "date": {
-            "type": "string"
+            "type": "datetime"
           }
         }
       }

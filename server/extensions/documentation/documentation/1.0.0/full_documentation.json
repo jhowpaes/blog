@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/21/2020 1:24:05 AM"
+    "x-generation-date": "04/22/2020 4:52:15 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2716,7 +2716,8 @@
     "schemas": {
       "Ideas": {
         "required": [
-          "id"
+          "id",
+          "date"
         ],
         "properties": {
           "id": {
@@ -2764,15 +2765,21 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "name": {
+                "type": "string"
               }
             }
           },
           "date": {
-            "type": "string"
+            "type": "datetime"
           }
         }
       },
       "NewIdeas": {
+        "required": [
+          "date"
+        ],
         "properties": {
           "description": {
             "type": "string"
@@ -2781,7 +2788,7 @@
             "type": "string"
           },
           "date": {
-            "type": "string"
+            "type": "datetime"
           }
         }
       },
@@ -2880,6 +2887,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "name": {
+                  "type": "string"
                 }
               }
             }
@@ -2980,7 +2990,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "date"
               ],
               "properties": {
                 "id": {
@@ -2993,10 +3004,13 @@
                   "type": "string"
                 },
                 "date": {
-                  "type": "string"
+                  "type": "datetime"
                 }
               }
             }
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
@@ -3040,6 +3054,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "name": {
+            "type": "string"
           }
         }
       },

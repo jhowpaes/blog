@@ -1249,7 +1249,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "date"
               ],
               "properties": {
                 "id": {
@@ -1262,10 +1263,13 @@
                   "type": "string"
                 },
                 "date": {
-                  "type": "string"
+                  "type": "datetime"
                 }
               }
             }
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
@@ -1309,6 +1313,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "name": {
+            "type": "string"
           }
         }
       }
