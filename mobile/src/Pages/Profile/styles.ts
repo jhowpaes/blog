@@ -21,6 +21,7 @@ export const ProfileStyle: ProfileStyles = {
   separator: {
     backgroundColor: ColorGuide.white,
     height: 1,
-    marginBottom: 15,
+    marginBottom: 10,
+    marginTop: 10,
   },
 };
