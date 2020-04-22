@@ -1,26 +1,29 @@
-import React from 'react';
+import {formatRelative, parseISO} from 'date-fns';
+import pt from 'date-fns/locale/pt';
+import React, {useMemo} from 'react';
 import {Text, View} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {ColorGuide, FontGuide} from '../../Utils/styleGuide';
 import {CardIdeaStyle as styles} from './styles';
 
-const CardIdea = () => {
+const CardIdea = ({data}: any) => {
+  const dateParsed = useMemo(() => {
+    return formatRelative(parseISO(data.date), new Date(), {
+      locale: pt,
+      addSuffix: true,
+    });
+  }, [data.date]);
+
   return (
     <View style={styles.container}>
       <Icon name="lightbulb" size={25} color={ColorGuide.primary} />
       <View style={styles.bg}>
         <View style={styles.header}>
-          <Text style={FontGuide.h3}>Nome do autor</Text>
-          <Text style={FontGuide.span}>hoje</Text>
+          <Text style={FontGuide.h3}>{data.user.name}</Text>
+          <Text style={FontGuide.span}>{dateParsed}</Text>
         </View>
         <View style={styles.content}>
-          <Text style={FontGuide.p}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in volupt
-          </Text>
+          <Text style={FontGuide.p}>{data.description}</Text>
         </View>
       </View>
     </View>
