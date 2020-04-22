@@ -48,5 +48,36 @@ react-native start or react-native start --reset-cache
 
 ```
 
+## Technology
+
+# mobile
+- React native
+- Typescript
+- Redux
+- Redux-saga
+- Redux-persist
+- immer
+- date-fns
+- react-navigation v5
+- react-native-vector-icons
+- axios
+- Reactotron to debug
+- styled-component / stylesheet
+- 
+
+# backend
+- strapi.io
+- sqlite
+
+## New Features
+
+- add editing and delete ideas
+- migrate stylesheet to styled-component
+- configure loading
+- fix bugs
+- fix editing profile
+- add web app
+
+
 
 Made with much :purple_heart: and :muscle: by Jhow Paes :blush: <a href="https://www.linkedin.com/in/jhowpaes/">Talk to me!</a>
