@@ -1,21 +1,24 @@
-import {ViewStyle} from 'react-native';
-import {ColorGuide} from '../../Utils/styleGuide';
+import {FlatList} from 'react-native';
+import styled from 'styled-components/native';
 
-interface IdeasStyles {
-  container: ViewStyle;
-  content: ViewStyle;
-  containerBtn: ViewStyle;
-}
+export const Container = styled.SafeAreaView`
+  flex: 1;
+  background: #fafcff;
+`;
 
-export const IdeasStyle: IdeasStyles = {
-  container: {
-    flex: 1,
-    backgroundColor: ColorGuide.secondary,
-  },
-  content: {
-    padding: 20,
-  },
-  containerBtn: {
-    alignItems: 'flex-end',
-  },
-};
+export const Content = styled.View`
+  flex: 1;
+  padding: 20px;
+`;
+
+export const AddBtn = styled.TouchableOpacity`
+  align-items: flex-end;
+`;
+
+export const IdeasList = styled(FlatList).attrs({
+  showsVerticalScrollIndicator: false,
+})`
+  flex: 1;
+  margin-bottom: 15px;
+  border-radius: 4px;
+`;
