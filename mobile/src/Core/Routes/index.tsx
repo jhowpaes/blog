@@ -1,11 +1,12 @@
 import {NavigationContainer} from '@react-navigation/native';
-import React, {useState} from 'react';
+import React from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {useSelector} from 'react-redux';
 import PageStack from './PageStack';
 import AuthStack from './stacks/AuthStack';
 
 const Routes = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState();
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
   return (
     <SafeAreaProvider>
