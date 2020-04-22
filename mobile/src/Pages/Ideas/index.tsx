@@ -47,7 +47,7 @@ const Ideas = () => {
         <IdeasList
           data={ideas}
           keyExtractor={(item) => String(item)}
-          renderItem={({item}) => <CardIdeas data={item} />}
+          renderItem={({item}) => <CardIdeas edit data={item} />}
         />
       </Content>
     </Container>
