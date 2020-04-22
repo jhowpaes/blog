@@ -6,6 +6,7 @@ interface CardIdeaStyles {
   header: ViewStyle;
   bg: ViewStyle;
   content: ViewStyle;
+  btn: ViewStyle;
 }
 
 export const CardIdeaStyle: CardIdeaStyles = {
@@ -31,5 +32,10 @@ export const CardIdeaStyle: CardIdeaStyles = {
     borderBottomRightRadius: 15,
     borderTopRightRadius: 30,
     padding: 15,
+  },
+  btn: {
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    paddingBottom: 15,
   },
 };
