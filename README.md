@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="Blog" src="./utils/logo.svg" style="font-size: 128px; width: 150px; height: 60px" />
+<img alt="Blog" src="./utils/logo.svg" style="width: 150px" />
 <br>
 Project Test knowledge (Ideas Blog)
 </h1>
