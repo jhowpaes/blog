@@ -1,5 +1,6 @@
 <h1 align="center">
-<img alt="Blog" src="./utils/logo.svg" style="width: 300px;" />
+<img alt="Blog" src="./utils/logo.svg" width="500"/>
+  
 <br>
 Project Test knowledge (Ideas Blog)
 </h1>
@@ -28,6 +29,9 @@ yarn install
 yarn develop
 
 ```
+**:warning:Note:warning:**<br>
+**A database was added to the utils folder.
+To add, run the yarn develop command once and then in the tmp folder remove the data.db file and add it from the utils folder.**
 
 # Mobile
 
@@ -69,7 +73,7 @@ react-native start or react-native start --reset-cache
 - strapi.io
 - sqlite
 
-## New Features
+##  :rocket: New Features
 
 - add editing and delete ideas
 - migrate stylesheet to styled-component
