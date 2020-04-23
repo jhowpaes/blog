@@ -30,8 +30,8 @@ yarn develop
 
 ```
 **:warning:Note:warning:**<br>
-**A database was added to the utils folder.
-To add, run the yarn develop command once and then in the tmp folder remove the data.db file and add it from the utils folder.**
+A database populated in the utils folder has been added.
+To add, run the yarn develop command once and then in the tmp folder remove the data.db file and add it from the utils folder.
 
 # Mobile
 
