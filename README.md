@@ -73,13 +73,14 @@ react-native start or react-native start --reset-cache
 - strapi.io
 - sqlite
 
-##  :rocket: New Features
+##  :rocket: New Features mobile
 
 - add editing and delete ideas
 - migrate stylesheet to styled-component
 - configure loading
 - fix bugs
 - fix editing profile
+- add test aplication
 - add web app
 
 
